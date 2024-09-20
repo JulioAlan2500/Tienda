@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta</title>
+    <link rel="stylesheet" href="../vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/alertifyjs/css/alertify.min.css">
+    <script src="../vendor/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/alertifyjs/alertify.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Crear Cuenta</h1>
+        <form action="../../model/crearCuenta.php" method="post">
+
+            <div class="form-floating mt-3 mb-3">
+
+                <input class="form-control" type="text" name="txtNombreUsuario" id="txtNombreUsuario" placeholder="Nombre">
+                <label for="txtNombreUsuario">usuario</label>
+
+            </div>
+
+            <div class="form-floating mt-3 mb-3">
+
+                <input class="form-control" type="text" name="txtApPaternoUsuario" id="txtApPaternoUsuario"
+                    placeholder="Apellido Paterno">
+                <label for="txtApPaternoUsuario">Apellido Paterno</label>
+
+            </div>
+
+            <div class="form-floating mt-3 mb-3">
+
+                <input class="form-control" type="text" name="txtApMaternoUsuario" id="txtApMaternoUsuario"
+                    placeholder="Apellido Materno">
+                <label for="txtApMaternoUsuario">Apellido Materno</label>
+
+            </div>
+
+            <div class="form-floating mt-3 mb-3">
+
+                <input class="form-control" type="text" name="txtEmail" id="txtEmail" placeholder="Email">
+                <label for="txtEmail">Email</label>
+
+            </div>
+
+            <div class="form-floating mt-3 mb-3">
+
+                <input class="form-control" type="text" name="txtTelUsuario" id="txtTelUsuario" placeholder="Telefono">
+                <label for="txtTelUsuario">Telefono</label>
+
+            </div>
+
+            <div class="form-floating mt-3 mb-3">
+
+                <input class="form-control" type="text" name="txtNombreLogin" id="txtNombreLogin"
+                    placeholder="Nombre de Usuairo">
+                <label for="txtNombreLogin">Nombre Login</label>
+
+            </div>
+            <div class="form-floating mt-3 mb-3">
+
+                <input class="form-control" type="password" name="txtPassword" id="txtPassword" placeholder="password">
+                <label for="txtPassword">password</label>
+
+            </div>
+
+            <div class="form-floating mt-3 mb-3">
+
+                <input class="form-control" type="text" name="txtIdRolUsuario" id="txtIdRolUsuario" placeholder="Rol de Usuario">
+                <label for="txtIdRolUsuario">Rol de Usuario</label>
+
+            </div>
+              <input class="btn btn-primary" type="submit" value="Iniciar Sesión" onclick="validarLogin();" return false;">
+            <input class="btn btn-danger" type="reset" value="Cancelar">
+        </form>
+    </div>
+</body>
+
+</html>
